@@ -1,0 +1,12 @@
+//Write a program that prompts the user to enter their name and age. Use char array of size 100 and use %s for input and output.
+#include <stdio.h>
+int main() {
+    char name[100];
+    char age[100];
+    printf("Enter your name: ");
+    scanf("%s", name);
+    printf("Enter your age: ");
+    scanf("%s", age);
+    printf("Name: %s\nAge: %s\n", name, age);
+    return 0;
+}
