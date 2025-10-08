@@ -11,13 +11,13 @@ printf("Matrix multiplication not possible. Columns of A must equal rows of B.\n
 return 0;
 }
 int A[m][n],B[p][q],C[m][q];
-printf("Enter elements of matrix A (%d x %d):\n",m,n);
+printf("Enter elements of matrix A (%d * %d):\n",m,n);
 for(i=0;i<m;i++){
 for(j=0;j<n;j++){
 scanf("%d",&A[i][j]);
 }
 }
-printf("Enter elements of matrix B (%d x %d):\n",p,q);
+printf("Enter elements of matrix B (%d * %d):\n",p,q);
 for(i=0;i<p;i++){
 for(j=0;j<q;j++){
 scanf("%d",&B[i][j]);
@@ -45,7 +45,7 @@ printf("%4d",B[i][j]);
 }
 printf("\n");
 }
-printf("\nResultant Matrix (A x B):\n");
+printf("\nResultant Matrix (A * B):\n");
 for(i=0;i<m;i++){
 for(j=0;j<q;j++){
 printf("%4d",C[i][j]);
